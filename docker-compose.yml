@@ -10,7 +10,6 @@ services:
   manager:
     build: .
     image: "manager:latest"
-    container_name: manager
     depends_on:
       - db
     env_file: db.env
